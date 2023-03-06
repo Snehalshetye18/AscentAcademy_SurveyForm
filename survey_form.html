@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey_form.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+    
+        <fieldset>
+            <label id="name-label" for="name" >Name <input id="name" name="name" type="text" placeholder=" Enter your name"required /></label>
+            <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder=" Enter your Email"required /></label>
+            <label id="number-label" for="age">Age (optional) <input id="age" type="number" name="age" min="10" max="120" placeholder=" Age" /></label>
+            <label for="radio-1">Which option best describes your current role?
+                <select id="dropdown" name="select">
+                    <option value="">select current role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full Time Job</option>
+                    <option value="3">Full Time Learner</option>
+                    <option value="4">Prefer Not to Say</option>
+                    <option value="5">Other</option>
+                </select>
+            </label>
+            <hr>
+            <label for="radio-2">Would you recommend coding as a career to a friend?<br><hr>
+            <label for="Definitely"><input id="Definitely" type="radio" name="radio" value="round-radio" /> Definitely</label><br>
+            <label for="Maybe"><input id="Maybe" type="radio" name="radio" value="round-radio" /> Maybe</label><br>
+            <label for="Not sure"><input id="Not sure" type="radio" name="radio" value="round-radio"/> Not sure</label><br>
+            <hr>
+            <label for="referrer">What is your favorite feature of coding?
+                <select id="select" name="select">
+                    <option value="">select an option</option>
+                    <option value="1">Challenges</option>
+                    <option value="2">Projects</option>
+                    <option value="3">Community</option>
+                    <option value="4">Open Source</option>
+                </select>
+            </label>
+            <hr>
+            <label for="terms-and-conditions">What would you like for yourself as a part of coding community? (Check all that apply)<br><hr>
+                <input id="Front-end Projects" type="checkbox" name="checkbox" value="checkbox"/> Front-end Projects<br>
+                <input id="Back-end Projects" type="checkbox" name="checkbox" value="checkbox"/> Back-end Projects<br>
+                <input id="Data Visualization" type="checkbox" name="checkbox" value="checkbox"/> Data Visualization<br>
+                <input id="Challenges" type="checkbox" name="checkbox" value="checkbox" required /> Challenges<br>
+                <input id="Open Source Community" type="checkbox" name="checkbox" value="checkbox"/> Open Source Community<br>
+                <input id="Gitter help rooms" type="checkbox" name="checkbox" value="checkbox"/> Gitter help rooms<br>
+                <input id="Videos" type="checkbox" name="checkbox" value="checkbox"/> Videos<br>
+                <input id="City Meetups" type="checkbox" name="checkbox" value="checkbox"/> City Meetups<br>
+                <input id="Wiki" type="checkbox" name="checkbox" value="checkbox"/> Wiki<br>
+                <input id="Forum" type="checkbox" name="checkbox" value="checkbox" /> Forum<br>
+                <input id="Additional Courses" type="checkbox" name="checkbox" value="checkbox"/> Additional Courses<br>
+            </label>
+            <hr>
+            <label for="bio">Any comments or suggestions?
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder=" Enter Your Comment Here..."></textarea>
+            </label>
+            <input type="submit" value="Submit" />
+        </fieldset>
+        
+    </form>
+    <script src="survey_form.js"></script>
+  </body>
+</html>
